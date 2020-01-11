@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="smoke" thread-count="1" parallel="classes">
+<test name="trial">
+	<classes>
+		<class name="trial.Cs_cart_7"></class>
+	</classes>
+</test>
+</suite>
