@@ -49,12 +49,7 @@ public class DataproviderDemo {
 		data[1][0]="neha";
 		data[1][1]="pass2";
 		
-		
-		
-		
 		return data;
-		
-		
 		
 		
 	}

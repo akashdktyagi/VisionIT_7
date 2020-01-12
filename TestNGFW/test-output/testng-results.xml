@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="48728" started-at="2020-01-12T04:54:53Z" finished-at="2020-01-12T04:55:42Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="48728" started-at="2020-01-12T04:54:53Z" finished-at="2020-01-12T04:55:42Z">
+      <class name="com.tc.TC_Seacrh">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.tc.TC_Seacrh@14bf9759]" name="setup" is-config="true" duration-ms="32476" started-at="2020-01-12T04:54:53Z" finished-at="2020-01-12T04:55:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="AddProductToCart()[pri:0, instance:com.tc.TC_Seacrh@14bf9759]" name="AddProductToCart" duration-ms="16215" started-at="2020-01-12T04:55:26Z" finished-at="2020-01-12T04:55:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddProductToCart -->
+      </class> <!-- com.tc.TC_Seacrh -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

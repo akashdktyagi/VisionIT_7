@@ -1,0 +1,12 @@
+<suite name="AddItmeCartSuite" thread-count="2" parallel="classes">
+<!-- 	<listeners>
+		<listener
+			class-name="SeleInterviewQuitions.rertyFailedTestCases.AnnotationAnalyzer" />
+	</listeners> -->
+	<test name="AddItemToCartTest">
+		<classes>
+			<class name="com.tc.TC_SearchProduct"></class>
+			<!-- <class name="Testpages.NewCustomerRegTest"></class> -->
+		</classes>
+	</test>
+</suite>
