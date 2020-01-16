@@ -1,0 +1,8 @@
+<suite name="smoke" thread-count="2" Parellal="classes">
+<test name="Priduct">
+<classes>
+<class name="CSCartproject.AddtoCartProduct"></class>
+<class name="RegisterNewUser.Registrationpage"></class>
+</classes>
+</test>
+</suite>

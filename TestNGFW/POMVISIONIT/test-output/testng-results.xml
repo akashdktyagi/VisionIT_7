@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SignInOnCSCart" duration-ms="22138" started-at="2020-01-15T23:16:46 IST" finished-at="2020-01-15T23:17:08 IST">
+    <groups>
+    </groups>
+    <test name="LoginPage" duration-ms="22138" started-at="2020-01-15T23:16:46 IST" finished-at="2020-01-15T23:17:08 IST">
+      <class name="tc.TC_LoginPage">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tc.TC_LoginPage@32cf48b7]" name="beforeMethod" is-config="true" duration-ms="39" started-at="2020-01-15T23:16:46 IST" finished-at="2020-01-15T23:16:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="t_01_Validate_login_cs_cart()[pri:0, instance:tc.TC_LoginPage@32cf48b7]" name="t_01_Validate_login_cs_cart" duration-ms="21942" started-at="2020-01-15T23:16:46 IST" finished-at="2020-01-15T23:17:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t_01_Validate_login_cs_cart -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tc.TC_LoginPage@32cf48b7]" name="afterMethod" is-config="true" duration-ms="5" started-at="2020-01-15T23:17:08 IST" finished-at="2020-01-15T23:17:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- tc.TC_LoginPage -->
+    </test> <!-- LoginPage -->
+  </suite> <!-- SignInOnCSCart -->
+</testng-results>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [SignInOnCSCart (0)]" parallel="classes">
+  <test thread-count="2" name="LoginPage(failed)" parallel="classes">
+    <classes>
+      <class name="tc.TC_LoginPage">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="t_01_Validate_login_cs_cart"/>
+        </methods>
+      </class> <!-- tc.TC_LoginPage -->
+    </classes>
+  </test> <!-- LoginPage(failed) -->
+</suite> <!-- Failed suite [SignInOnCSCart (0)] -->
