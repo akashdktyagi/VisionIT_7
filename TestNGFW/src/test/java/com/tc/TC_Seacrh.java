@@ -1,5 +1,9 @@
 package com.tc;
 
+import java.io.IOException;
+
+import javax.swing.text.Utilities;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeMethod;
@@ -7,6 +11,7 @@ import org.testng.annotations.Test;
 
 import com.po.PO_Search;
 import com.po.Search_po;
+import com.utility.Utilitys;
 
 import junit.framework.Assert;
 
@@ -40,13 +45,14 @@ public class TC_Seacrh {
 	}
 	
 	@Test
-	public void AddProductToCart()
+	public void AddProductToCart() throws IOException
 	{
 		po_search.enterproductKey("Mobile");
 		po_search.clickonsecrhButton();
 		po_search.clickonProduct();
 		po_search.AddItemToCart();
-		Assert.assertEquals(expected, actual);
+		Utilitys.takeScreenShot();
+		//Assert.assertEquals(expected, actual);
 		
 		
 		

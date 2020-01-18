@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tc.TC_SearchProduct">
+      <class name="testng.TestWindow">
         <methods>
+          <include name="TestWinHandle"/>
           <include name="setup"/>
-          <include name="seacrhProductWithKeyword"/>
         </methods>
-      </class> <!-- com.tc.TC_SearchProduct -->
+      </class> <!-- testng.TestWindow -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
