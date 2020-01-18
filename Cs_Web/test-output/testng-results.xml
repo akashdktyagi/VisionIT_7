@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="50411" started-at="2020-01-17T14:18:02Z" finished-at="2020-01-17T14:18:53Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="50411" started-at="2020-01-17T14:18:02Z" finished-at="2020-01-17T14:18:53Z">
+      <class name="com.facebook.pages.Dataprovider">
+        <test-method status="PASS" signature="testchrome(java.lang.String, java.lang.String)[pri:0, instance:com.facebook.pages.Dataprovider@60285225]" name="testchrome" duration-ms="28024" started-at="2020-01-17T14:18:02Z" data-provider="testdata" finished-at="2020-01-17T14:18:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[usrname@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[user123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testchrome -->
+        <test-method status="PASS" signature="testchrome(java.lang.String, java.lang.String)[pri:0, instance:com.facebook.pages.Dataprovider@60285225]" name="testchrome" duration-ms="22314" started-at="2020-01-17T14:18:30Z" data-provider="testdata" finished-at="2020-01-17T14:18:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[usrname@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[user123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testchrome -->
+      </class> <!-- com.facebook.pages.Dataprovider -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

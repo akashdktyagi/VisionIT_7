@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [smoke]" parallel="classes">
+  <test thread-count="5" name="Cs_Web(failed)" parallel="classes">
+    <classes>
+      <class name="Carts.Search_product">
+        <methods>
+          <include name="Product_search"/>
+        </methods>
+      </class> <!-- Carts.Search_product -->
+    </classes>
+  </test> <!-- Cs_Web(failed) -->
+</suite> <!-- Failed suite [smoke] -->
