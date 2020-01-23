@@ -1,0 +1,8 @@
+<suite name="smoke" thread-count="1" Parellal="classes">
+<test name="Guru">
+<classes>
+<class name="googleWindowHandle.GoogleWindowHandle"></class>
+
+</classes>
+</test>
+</suite>

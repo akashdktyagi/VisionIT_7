@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="smoke" duration-ms="27408" started-at="2020-01-21T22:59:30 IST" finished-at="2020-01-21T22:59:58 IST">
+    <groups>
+    </groups>
+    <test name="Guru" duration-ms="27408" started-at="2020-01-21T22:59:30 IST" finished-at="2020-01-21T22:59:58 IST">
+      <class name="googleWindowHandle.GoogleWindowHandle">
+        <test-method status="PASS" signature="setup()[pri:0, instance:googleWindowHandle.GoogleWindowHandle@58a90037]" name="setup" is-config="true" duration-ms="26919" started-at="2020-01-21T22:59:30 IST" finished-at="2020-01-21T22:59:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testSuccessHandleWindow()[pri:0, instance:googleWindowHandle.GoogleWindowHandle@58a90037]" name="testSuccessHandleWindow" duration-ms="430" started-at="2020-01-21T22:59:57 IST" finished-at="2020-01-21T22:59:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessHandleWindow -->
+      </class> <!-- googleWindowHandle.GoogleWindowHandle -->
+    </test> <!-- Guru -->
+  </suite> <!-- smoke -->
+</testng-results>
