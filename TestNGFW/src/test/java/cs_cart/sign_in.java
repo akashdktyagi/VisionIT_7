@@ -3,6 +3,7 @@ package cs_cart;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -79,12 +80,15 @@ class sign_in
 	driver.findElement(By.xpath("//input[@id='credit_card_name_1']")).sendKeys("Neha Dhande");
 	
 	//click checkbox
+	JavascriptExecutor js=(JavascriptExecutor) driver;
+	js.executeScript("window.scrollBy(0,1000)");
+	
 	driver.findElement(By.xpath("//input[@id='id_accept_terms5e18b1e15e77e' and @name='accept_terms']")).click();
 	Reporter.log("click on check box");
 	
 	//place order
-	//driver.findElement(By.xpath("//button[@class='litecheckout__submit-btn ']")).click();
-	//Reporter.log("Order placed");
+	driver.findElement(By.xpath("//button[@class='litecheckout__submit-btn ']")).click();
+	Reporter.log("Order placed");
 	
  }
   
