@@ -1,8 +1,0 @@
-<suite name="smoke" thread-count="1" Parellal="classes">
-<test name="GuruScreenshot">
-<classes>
-<class name="guru99TakeScreenshot.Guru99TakeScreenshot"></class>
-
-</classes>
-</test>
-</suite>
