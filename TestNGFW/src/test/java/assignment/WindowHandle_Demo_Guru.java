@@ -2,14 +2,13 @@ package assignment;
 
 import java.util.Iterator;
 import java.util.Set;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import com.PO.WebDriver;
 
 public class WindowHandle_Demo_Guru
 {
-	
+	WebDriver driver;
 	 public static void main(String[] args) throws InterruptedException {									
      	WebDriver driver=new ChromeDriver();			
      		
