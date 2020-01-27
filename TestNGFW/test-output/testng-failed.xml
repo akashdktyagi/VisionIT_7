@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="trial.Cs_cart_7">
+      <class name="pom.TC.AddToCart_TC">
         <methods>
-          <include name="cartDemo"/>
+          <include name="closeBrowser"/>
+          <include name="productAddToCart"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- trial.Cs_cart_7 -->
+      </class> <!-- pom.TC.AddToCart_TC -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
