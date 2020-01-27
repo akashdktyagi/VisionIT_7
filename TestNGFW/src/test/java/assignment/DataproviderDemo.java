@@ -20,7 +20,7 @@ public class DataproviderDemo {
 	WebElement uname;
 	WebElement pass;
 	WebElement btnlogin;
-	static String filepath="E:\\v_batch_07\\Cs_Cart_TestNg_Proj\\src\\test\\java\\com\\testdata\\LoginWorkbook.xlsx";
+	static String filepath="C:\\Users\\satyam\\git\\VisionIt_Neha_proj\\VisionIT_7\\TestNGFW\\src\\test\\java\\com_xls\\Excelsheet1.xlsx";
 	
 	
 
@@ -55,14 +55,14 @@ public class DataproviderDemo {
 		
 	}
 	//@Test(dataProvider="logindataSupplier")
-	@Parameters({"uname","pass"})
-	@Test
-	public void checkloginScenario(String uname,String pass){
+	//@Parameters({"uname","pass"})
+	@Test(dataProvider="logindataSupplier")
+	public void checkloginScenario(String username,String password){
 		
 		this.uname=driver.findElement(By.xpath("//*[@name='username']"));
-		this.uname.sendKeys(uname);
+		this.uname.sendKeys(username);
 		this.pass=driver.findElement(By.xpath("//*[@name='password']"));
-		this.pass.sendKeys(pass);
+		this.pass.sendKeys(password);
 		btnlogin= driver.findElement(By.xpath("//*[@value='Log In']"));
 		btnlogin.click();	
 		
@@ -71,13 +71,13 @@ public class DataproviderDemo {
 	}
 	
 	@DataProvider(name="logindataSupplier")
-	public static Object[][] getlogintestdata(String sheetname) throws IOException{
+	public  Object[][] getlogintestdata() throws IOException{
 		
 		FileInputStream fis = new FileInputStream(filepath);
 		
 		XSSFWorkbook workbook =new XSSFWorkbook(fis);
 		
-		XSSFSheet sheet=workbook.getSheet(sheetname);
+		XSSFSheet sheet=workbook.getSheetAt(0);
 		
 		int rowcount=sheet.getLastRowNum();
 		System.out.println("rowcoun : " +rowcount);
@@ -105,7 +105,7 @@ public class DataproviderDemo {
 		
 	}
 	
-	@Test
+	/*@Test
 	public void checkDp1() {
 		
 		
@@ -119,7 +119,7 @@ public class DataproviderDemo {
 		
 		
 		
-	}
+	}*/
 
 	
 	
