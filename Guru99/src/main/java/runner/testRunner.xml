@@ -1,0 +1,12 @@
+<suite name="Testsuite_1" thread-count="3" parallel="classes">
+<!-- 	<listeners>
+		<listener
+			class-name="SeleInterviewQuitions.rertyFailedTestCases.AnnotationAnalyzer" />
+	</listeners> -->
+	<test name="test1">
+		<classes>
+			<class name="Testpages.LoginTest"></class>
+			<!-- <class name="Testpages.NewCustomerRegTest"></class> -->
+		</classes>
+	</test>
+</suite>
