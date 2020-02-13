@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="smoke"  parallel="classes">
+<test name="Cs_Web">
+<classes>
+
+<class name="Carts.Cart_E"></class>
+<class name="Carts.Search_product"></class>
+</classes>
+</test>
+</suite>
