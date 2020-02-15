@@ -1,29 +1,19 @@
 package stepdefs;
 
-import static org.junit.Assert.assertEquals;
 
-import java.util.List;
-import java.util.concurrent.TimeUnit;
+//import org.apache.logging.log4j.LogManager;
+//import org.apache.logging.log4j.Logger;
 
-import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.PageFactory;
 
-import cucumber.api.Scenario;
-import cucumber.api.java.Before;
-import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import di.ScnCntxt;
-import po.PO_Cmn;
-import utils.Cmn;
+
 
 //Task: Add Assert J lib/assertion
 
 public class StepDefs_Search {
+//	private static final Logger LOG = LogManager.getLogger(StepDefs_Search.class);
 	ScnCntxt context;
 
 	public StepDefs_Search(ScnCntxt cntxt) {
@@ -34,13 +24,15 @@ public class StepDefs_Search {
 	public void search_product(String arg) {
 		context.PO_CMN.SearchProduct(arg);
 		context.SCN.write("Product name entered as " + arg + " and search button clicked");
+//		LOG.info("Product successfully entered and searched with product as : " + arg);
 	}
 
 	@Then("Page is navigated to Search Page")
 	public void page_is_navigated_to_Search_Page() {
 		context.PO_CMN.ValidateSearchIsWorking();
-
+//		LOG.info("Page SUccessfully navigated to product search page");
 		
+
 	}
 	
 
