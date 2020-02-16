@@ -39,6 +39,13 @@ public class StepDefs_SetUp {
 		new Cmn(context).NavigateToUrl(context.DRIVER, url);
 		context.SCN.write("User Navigated to url: " + url);
 	}
+	
+	@Given("I navigate to env")
+	public void i_navigate_to_env() {
+		String urlEnv = System.getProperty("url");
+		new Cmn(context).NavigateToUrl(context.DRIVER, urlEnv);
+		context.SCN.write("User Navigated to url: " + urlEnv);
+	}
 
 	
 

@@ -4,7 +4,8 @@ Feature: Healtch Check Script for CSCart App
 
   Background: Open browser and navigate
     Given I open a browser
-    And I navigate to URL "http://demo.cs-cart.com/"
+    And I navigate to env
+    #And I navigate to URL "http://demo.cs-cart.com/"
     
   Scenario: Search Product computer
     When I Search the Product "computer"
