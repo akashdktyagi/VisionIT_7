@@ -36,7 +36,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -46,7 +45,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Feb 11, 2020 07:26:07 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Feb 15, 2020 11:23:46 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -62,8 +61,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
-					<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -117,10 +114,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -131,10 +128,10 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -145,10 +142,10 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='60%'><span class='strong'>3</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>10</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='20%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='20%'>1</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -166,11 +163,11 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Healtch Check Script for CSCart App</span>
-						<span class='test-time'>Feb 11, 2020 07:26:07 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Feb 15, 2020 11:23:47 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -180,14 +177,14 @@
     <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
 <div class='test-desc'>I will navigate the App till Search</div>
-<div class='scenario node' test-id='2' status='fail'>
+<div class='scenario node' test-id='2' status='pass'>
     <div class='category-list'>
         <span class='category label'>@tag</span>
         <span class='category label'>@tag1</span>
     </div>
-    <span class='duration right label'>0h 0m 2s+881ms</span>
+    <span class='duration right label'>0h 0m 6s+304ms</span>
     <div class="bdd-test">
-        <div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario: Navigating the CSCart App till Search</div>
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Search Product</div>
     </div>
     <ul class='steps'>
         <li test-id='3' class='node asterisk pass' status='pass'>
@@ -196,49 +193,61 @@
         </li>
         <li test-id='4' class='node given pass' status='pass'>
             <div class="step-name" title="StepDefs_SetUp.i_open_browser_info_from_maven()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given I open a browser</div>
-                <div class="node-step">FireFox Browser is opened</div>
+                <div class="node-step">Chrome Browser is opened</div>
         </li>
         <li test-id='5' class='node and pass' status='pass'>
             <div class="step-name" title="StepDefs_SetUp.i_navigate_to_URL(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And I navigate to URL "http://demo.cs-cart.com/"</div>
                 <div class="node-step">Browser Navigated to URL: http://demo.cs-cart.com/</div>
                 <div class="node-step">User Navigated to url: http://demo.cs-cart.com/</div>
         </li>
-        <li test-id='6' class='node when fail' status='fail'>
-            <div class="step-name" title="StepDefs_Search.search_product(String)"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>When I Search the Product "computer"</div>
-                <textarea disabled class="code-block">org.openqa.selenium.WebDriverException: 
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Akashs-MacBook-Pro.local', ip: 'fe80:0:0:0:8b4:41e6:8432:9bce%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '12.0.2'
-Driver info: org.openqa.selenium.safari.SafariDriver
-Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.0.4, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 19C57, safari:platformVersion: 10.15.2, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
-Session ID: 3A0EA87D-6E7E-4A5B-92BD-D512B5B15197
-*** Element info: {Using=name, value=hint_q}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
-	at po.PO_Cmn.SetSearchTextBox(PO_Cmn.java:43)
-	at po.PO_Cmn.SearchProduct(PO_Cmn.java:56)
-	at stepdefs.StepDefs_Search.search_product(StepDefs_Search.java:25)
-	at ✽.I Search the Product "computer"(features/HealthCheck.feature:10)
-</textarea>
+        <li test-id='6' class='node when pass' status='pass'>
+            <div class="step-name" title="StepDefs_Search.search_product(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When I Search the Product "computer"</div>
+                <div class="node-step">Search box Key enetered as : computer</div>
+                <div class="node-step">Search Button Clicked</div>
+                <div class="node-step">Product Searched.</div>
+                <div class="node-step">Product name entered as computer and search button clicked</div>
         </li>
-        <li test-id='7' class='node then skip' status='skip'>
-            <div class="step-name" title="StepDefs_Search.page_is_navigated_to_Search_Page()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then Page is navigated to Search Page</div>
-                <div class="node-step">Step skipped</div>
+        <li test-id='7' class='node then pass' status='pass'>
+            <div class="step-name" title="StepDefs_Search.page_is_navigated_to_Search_Page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Page is navigated to Search Page</div>
+                <div class="node-step">Page Title is Validated. Expected: Search results actual: Search results</div>
+                <div class="node-step">Search Results are displayed. Search Products Count: 1</div>
+        </li>
+    </ul>
+</div>
+<div class='scenario node' test-id='8' status='pass'>
+    <div class='category-list'>
+        <span class='category label'>@tag</span>
+        <span class='category label'>@tag1</span>
+    </div>
+    <span class='duration right label'>0h 0m 5s+111ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Navigating the CSCart App till Search</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='9' class='node asterisk pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>StepDefs_SetUp.beforeMethodSetUp(Scenario)</div>
+                <div class="node-step"></div>
+        </li>
+        <li test-id='10' class='node given pass' status='pass'>
+            <div class="step-name" title="StepDefs_SetUp.i_open_browser_info_from_maven()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given I open a browser</div>
+                <div class="node-step">Chrome Browser is opened</div>
+        </li>
+        <li test-id='11' class='node and pass' status='pass'>
+            <div class="step-name" title="StepDefs_SetUp.i_navigate_to_URL(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And I navigate to URL "http://demo.cs-cart.com/"</div>
+                <div class="node-step">Browser Navigated to URL: http://demo.cs-cart.com/</div>
+                <div class="node-step">User Navigated to url: http://demo.cs-cart.com/</div>
+        </li>
+        <li test-id='12' class='node when pass' status='pass'>
+            <div class="step-name" title="StepDefs_Search.search_product(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When I Search the Product "mobile"</div>
+                <div class="node-step">Search box Key enetered as : mobile</div>
+                <div class="node-step">Search Button Clicked</div>
+                <div class="node-step">Product Searched.</div>
+                <div class="node-step">Product name entered as mobile and search button clicked</div>
+        </li>
+        <li test-id='13' class='node then pass' status='pass'>
+            <div class="step-name" title="StepDefs_Search.page_is_navigated_to_Search_Page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Page is navigated to Search Page</div>
+                <div class="node-step">Page Title is Validated. Expected: Search results actual: Search results</div>
+                <div class="node-step">Search Results are displayed. Search Products Count: 1</div>
         </li>
     </ul>
 </div>
@@ -286,13 +295,13 @@ Session ID: 3A0EA87D-6E7E-4A5B-92BD-D512B5B15197
 					<div class='category-heading'>
 						<span class='category-name'>@tag</span>
 						<span class='category-status right'>
-						<span class='label fail'>2</span>
+						<span class='label pass'>3</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 2</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -306,14 +315,19 @@ Session ID: 3A0EA87D-6E7E-4A5B-92BD-D512B5B15197
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 11, 2020 07:26:07 PM</td>
+										<td>Feb 15, 2020 11:23:47 PM</td>
 										<td class='linked' test-id='1'>Healtch Check Script for CSCart App</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Feb 11, 2020 07:26:07 PM</td>
-										<td class='linked' test-id='2'>Healtch Check Script for CSCart App.Navigating the CSCart App till Search</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td>Feb 15, 2020 11:23:47 PM</td>
+										<td class='linked' test-id='2'>Healtch Check Script for CSCart App.Search Product</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Feb 15, 2020 11:23:53 PM</td>
+										<td class='linked' test-id='8'>Healtch Check Script for CSCart App.Navigating the CSCart App till Search</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -324,13 +338,13 @@ Session ID: 3A0EA87D-6E7E-4A5B-92BD-D512B5B15197
 					<div class='category-heading'>
 						<span class='category-name'>@tag1</span>
 						<span class='category-status right'>
-						<span class='label fail'>1</span>
+						<span class='label pass'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -344,9 +358,14 @@ Session ID: 3A0EA87D-6E7E-4A5B-92BD-D512B5B15197
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 11, 2020 07:26:07 PM</td>
-										<td class='linked' test-id='2'>Healtch Check Script for CSCart App.Navigating the CSCart App till Search</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td>Feb 15, 2020 11:23:47 PM</td>
+										<td class='linked' test-id='2'>Healtch Check Script for CSCart App.Search Product</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Feb 15, 2020 11:23:53 PM</td>
+										<td class='linked' test-id='8'>Healtch Check Script for CSCart App.Navigating the CSCart App till Search</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -362,91 +381,7 @@ Session ID: 3A0EA87D-6E7E-4A5B-92BD-D512B5B15197
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='exception-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='exception-collection' class='exception-collection'>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.WebDriverException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Feb 11, 2020 07:26:09 PM</td>
-										<td class='linked' test-id='6'>Healtch Check Script for CSCart App.Navigating the CSCart App till Search.When I Search the Product "computer"</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: 
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Akashs-MacBook-Pro.local', ip: 'fe80:0:0:0:8b4:41e6:8432:9bce%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '12.0.2'
-Driver info: org.openqa.selenium.safari.SafariDriver
-Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.0.4, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 19C57, safari:platformVersion: 10.15.2, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
-Session ID: 3A0EA87D-6E7E-4A5B-92BD-D512B5B15197
-*** Element info: {Using=name, value=hint_q}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
-	at po.PO_Cmn.SetSearchTextBox(PO_Cmn.java:43)
-	at po.PO_Cmn.SearchProduct(PO_Cmn.java:56)
-	at stepdefs.StepDefs_Search.search_product(StepDefs_Search.java:25)
-	at ✽.I Search the Product "computer"(features/HealthCheck.feature:10)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -460,31 +395,31 @@ Session ID: 3A0EA87D-6E7E-4A5B-92BD-D512B5B15197
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>5</div>
+					<div class='panel-lead'>10</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Feb 11, 2020 07:26:07 PM</div>
+					<div class='panel-lead'>Feb 15, 2020 11:23:46 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Feb 11, 2020 07:26:10 PM</div>
+			 		<div class='panel-lead'>Feb 15, 2020 11:23:58 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 3s+72ms</div>
+					<div class='panel-lead'>0h 0m 11s+596ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -501,20 +436,20 @@ Session ID: 3A0EA87D-6E7E-4A5B-92BD-D512B5B15197
 						</tr>
 						<tr>
 							<td>@tag</td>
+							<td>3</td>
 							<td>0</td>
-							<td>2</td>
 							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 						<tr>
 							<td>@tag1</td>
+							<td>2</td>
 							<td>0</td>
-							<td>1</td>
 							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 					</table>
@@ -529,38 +464,38 @@ Session ID: 3A0EA87D-6E7E-4A5B-92BD-D512B5B15197
 		<script>
 			var statusGroup = {
                 parentCount: 1,
-				passParent: 0,
-				failParent: 1,
+				passParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
-				childCount: 1,
-				passChild: 0,
-				failChild: 1,
+				exceptionsParent: 0,
+				childCount: 2,
+				passChild: 2,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
 				debugChild: 0,
-				exceptionsChild: 1,
-				grandChildCount: 5,
-				passGrandChild: 3,
-				failGrandChild: 1,
+				exceptionsChild: 0,
+				grandChildCount: 10,
+				passGrandChild: 10,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 1,
+				skipGrandChild: 0,
 				infoGrandChild: 0,
 				debugGrandChild: 0,
-				exceptionsGrandChild: 2,
+				exceptionsGrandChild: 0,
 			};
 		</script>
 		<script>
 			var timeline = {
-			        "Healtch Check Script for CSCart App":2.881
+			        "Healtch Check Script for CSCart App":11.418
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>
