@@ -1,4 +1,4 @@
-@tag
+@search
 Feature: Healtch Check Script for CSCart App
   I will navigate the App till Search
 
@@ -6,12 +6,15 @@ Feature: Healtch Check Script for CSCart App
     Given I open a browser
     And I navigate to URL "http://demo.cs-cart.com/"
     
-  @tag1
-  Scenario: Search Product
+  Scenario: Search Product computer
     When I Search the Product "computer"
     Then Page is navigated to Search Page
     
-  @tag1
-  Scenario: Navigating the CSCart App till Search
+  Scenario: Search Product mobile
     When I Search the Product "mobile"
     Then Page is navigated to Search Page
+    
+  Scenario: Search Product computer and scroll
+    When I Search the Product "computer"
+    Then Page is navigated to Search Page
+    And scroll the page

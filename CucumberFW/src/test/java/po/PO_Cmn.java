@@ -28,7 +28,7 @@ public class PO_Cmn {
 	
 	//Locators
 	@FindBy(how=How.NAME,using="hint_q")
-	private WebElement txtbx_search;
+	public WebElement txtbx_search; //made it public just to demonstrate flash feature of JS. this should be private
 	
 	@FindBy(how=How.XPATH,using="//button[@title='Search']")
 	private WebElement btn_search;

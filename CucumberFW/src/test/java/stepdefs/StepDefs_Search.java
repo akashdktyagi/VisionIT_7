@@ -4,13 +4,11 @@ package stepdefs;
 //import org.apache.logging.log4j.LogManager;
 //import org.apache.logging.log4j.Logger;
 
-
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import di.ScnCntxt;
+import utils.JavaScriptUtils;
 
-
-//Task: Add Assert J lib/assertion
 
 public class StepDefs_Search {
 //	private static final Logger LOG = LogManager.getLogger(StepDefs_Search.class);
@@ -30,11 +28,20 @@ public class StepDefs_Search {
 	@Then("Page is navigated to Search Page")
 	public void page_is_navigated_to_Search_Page() {
 		context.PO_CMN.ValidateSearchIsWorking();
-//		LOG.info("Page SUccessfully navigated to product search page");
-		
+		context.SCN.write("Page SUccessfully navigated to product search page");
+	}
+	
+	@Then("scroll the page")
+	public void scroll_the_page() throws InterruptedException {
+		//Thread.sleep(5000);
+		//JavaScriptUtils.flash(context.PO_CMN.txtbx_search, context.DRIVER);
+		//context.SCN.write("js flash is successfully");
+		Thread.sleep(5000);
+		JavaScriptUtils.scrollPageDown(context.DRIVER);
+		context.SCN.write("js scroll is successfully");
 
 	}
 	
-
+	
 
 }
