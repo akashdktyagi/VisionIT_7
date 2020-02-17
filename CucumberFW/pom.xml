@@ -14,13 +14,62 @@
 
 	<profiles>
 		<profile>
-			<id>env</id>
+			<id>chrome</id>
 			<properties>
-				<env.url>true</env.url>
+				<browser.info>chrome</browser.info>
+			</properties>
+		</profile>
+		<profile>
+			<id>firefox</id>
+			<properties>
+				<browser.info>firefox</browser.info>
+			</properties>
+		</profile>
+		<profile>
+			<id>safari</id>
+			<properties>
+				<browser.info>safari</browser.info>
+			</properties>
+		</profile>
+		<profile>
+			<id>dev-env</id>
+			<properties>
+				<env.url>http://demo.cs-cart.com/</env.url>
+			</properties>
+		</profile>
+		<profile>
+			<id>test-env</id>
+			<properties>
+				<env.url>http://test.demo.cs-cart.com/</env.url>
 			</properties>
 		</profile>
 	</profiles>
 
+	<build>
+
+		<plugins>
+			<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.12.4</version>
+				<configuration>
+					<systemPropertyVariables>
+						<url>${env.url}</url>
+						<browser>${browser.info}</browser>
+					</systemPropertyVariables>
+				</configuration>
+				<executions>
+					<execution>
+						<id>default-test</id>
+						<phase>test</phase>
+						<goals>
+							<goal>test</goal>
+						</goals>
+
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 	<!-- For Cucumber -->
 	<dependencies>
 		<dependency>

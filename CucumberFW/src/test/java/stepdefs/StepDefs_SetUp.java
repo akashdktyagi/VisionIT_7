@@ -30,6 +30,7 @@ public class StepDefs_SetUp {
 	@Given("I open a browser")
 	public void i_open_browser_info_from_maven() {
 		//this browser property will be fetched when we execute it from Maven
+		System.out.println("browser: "+ System.getProperty("browser"));
 		context.DRIVER = new Cmn(context).getBrowser(System.getProperty("browser"));
 		context.PO_CMN = new PO_Cmn(context);
 	}
@@ -43,6 +44,7 @@ public class StepDefs_SetUp {
 	@Given("I navigate to env")
 	public void i_navigate_to_env() {
 		String urlEnv = System.getProperty("url");
+		System.out.println("URL ENv: "+ urlEnv);
 		new Cmn(context).NavigateToUrl(context.DRIVER, urlEnv);
 		context.SCN.write("User Navigated to url: " + urlEnv);
 	}
