@@ -12,8 +12,20 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
+
+<!--I am pooka the almighty. Want to change this line and all the lines
+
+
+dsfsafd
+
+Staff
+Def
+Df
+
+-->
 <!-- THis change is on my Temp Branch1 -->
 <!-- Want to change this line -->
+
 	<profiles>
 		<profile>
 			<id>chrome</id>
