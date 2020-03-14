@@ -47,27 +47,19 @@
 	</profiles>
 
 	<build>
-
 		<plugins>
 			<plugin>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.12.4</version>
+				<version>3.0.0-M1</version>
 				<configuration>
 					<systemPropertyVariables>
 						<url>${env.url}</url>
 						<browser>${browser.info}</browser>
 					</systemPropertyVariables>
+					<parallel>methods</parallel>
+					<useUnlimitedThreads>true</useUnlimitedThreads>
+					<argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
 				</configuration>
-				<executions>
-					<execution>
-						<id>default-test</id>
-						<phase>test</phase>
-						<goals>
-							<goal>test</goal>
-						</goals>
-
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
 	</build>

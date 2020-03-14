@@ -50,6 +50,14 @@
 							</a>
 						</li>
 						<li>
+							<a href="exception.html">
+							<span class="nav-icon">
+							<i class="fa fa-warning"></i>
+							</span>
+							<span class="nav-text">Exceptions</span>
+							</a>
+						</li>
+						<li>
 							<a href="dashboard.html">
 							<span class="nav-icon">
 							<i class="fa fa-dashboard"></i>
@@ -94,11 +102,11 @@
 									</a>
 									<div class="dropdown-menu pt-0 mt-2 animate fadeIn">
 										<a class="dropdown-item" href="#"><span class="tf" status="pass"><i class="fa fa-dot-circle-o text-success"></i>Pass</span></a>
+										<a class="dropdown-item" href="#"><span class="tf" status="fail"><i class="fa fa-dot-circle-o text-danger"></i>Fail</span></a>
 										
 										
 										
-										
-										
+										<a class="dropdown-item" href="#"><span class="tf" status="skip"><i class="fa fa-dot-circle-o text-blue"></i>Skip</span></a>
 										<div class="dropdown-divider"></div>
 										<a class="dropdown-item" href="#"><span class="tf" status="clear"><i class="fa fa-dot-circle-o text-warn"></i>Clear</span></a>
 									</div>
@@ -128,12 +136,12 @@
 								<div class="col-md-8 col-sm-12">
 									<div class="logger-content">
 										<h6 class="mb-3 ml-1">Test Logs</h6>
-											<div class="tsc" status="pass">
-											<div class="st pass test l0" 
+											<div class="tsc" status="fail">
+											<div class="st fail test l0" 
 												tags="@search"
 												devices="">
-												<span class="tt">02.17.2020 08:48:09</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">03.10.2020 15:51:48</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
 												<span class="tn">[Healtch Check Script for CSCart App] started</span>
 												<span class="category-list">
 													<span class="category badge"><i class="fa fa-tag"></i> @search</span>
@@ -143,20 +151,9 @@
 											<div class="st pass test l1" 
 												tags="@search"
 												devices="">
-												<span class="tt">02.17.2020 08:48:09</span>&nbsp;
+												<span class="tt">03.10.2020 15:51:48</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">|---[Search Product computer] started</span>
-												<span class="category-list">
-													<span class="category badge"><i class="fa fa-tag"></i> @search</span>
-												</span>
-												
-											</div>
-											<div class="st pass test l1" 
-												tags="@search"
-												devices="">
-												<span class="tt">02.17.2020 08:48:09</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">|---[Search Product computer] started</span>
+												<span class="tn">|---[Search Product computer 1] started</span>
 												<span class="category-list">
 													<span class="category badge"><i class="fa fa-tag"></i> @search</span>
 												</span>
@@ -165,12 +162,12 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">02.17.2020 08:48:09</span>&nbsp;
+												<span class="tt">03.10.2020 15:51:48</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[StepDefs_SetUp.beforeMethodSetUp(Scenario)] started</span>
 												
 												<div class="st pass">
-													<span class="tt">02.17.2020 08:48:09</span>&nbsp;
+													<span class="tt">03.10.2020 15:51:48</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[StepDefs_SetUp.beforeMethodSetUp(Scenario)]</span>
 													
@@ -180,12 +177,12 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">02.17.2020 08:48:09</span>&nbsp;
+												<span class="tt">03.10.2020 15:51:48</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I open a browser] started</span>
 												
 												<div class="st info">
-													<span class="tt">02.17.2020 08:48:12</span>&nbsp;
+													<span class="tt">03.10.2020 15:51:50</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I open a browser]</span>
 													
@@ -195,19 +192,19 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">02.17.2020 08:48:12</span>&nbsp;
+												<span class="tt">03.10.2020 15:51:50</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I navigate to env] started</span>
 												
 												<div class="st info">
-													<span class="tt">02.17.2020 08:48:12</span>&nbsp;
+													<span class="tt">03.10.2020 15:51:51</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I navigate to env]</span>
 													
 													<span class="td">Browser Navigated to URL: http://demo.cs-cart.com/</span>
 												</div>
 												<div class="st info">
-													<span class="tt">02.17.2020 08:48:12</span>&nbsp;
+													<span class="tt">03.10.2020 15:51:51</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I navigate to env]</span>
 													
@@ -217,33 +214,33 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">02.17.2020 08:48:12</span>&nbsp;
+												<span class="tt">03.10.2020 15:51:51</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I Search the Product "computer"] started</span>
 												
 												<div class="st info">
-													<span class="tt">02.17.2020 08:48:15</span>&nbsp;
+													<span class="tt">03.10.2020 15:51:53</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I Search the Product "computer"]</span>
 													
 													<span class="td">Search box Key enetered as : computer</span>
 												</div>
 												<div class="st info">
-													<span class="tt">02.17.2020 08:48:17</span>&nbsp;
+													<span class="tt">03.10.2020 15:51:56</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I Search the Product "computer"]</span>
 													
 													<span class="td">Search Button Clicked</span>
 												</div>
 												<div class="st info">
-													<span class="tt">02.17.2020 08:48:17</span>&nbsp;
+													<span class="tt">03.10.2020 15:51:56</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I Search the Product "computer"]</span>
 													
 													<span class="td">Product Searched.</span>
 												</div>
 												<div class="st info">
-													<span class="tt">02.17.2020 08:48:17</span>&nbsp;
+													<span class="tt">03.10.2020 15:51:56</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I Search the Product "computer"]</span>
 													
@@ -253,26 +250,26 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">02.17.2020 08:48:17</span>&nbsp;
+												<span class="tt">03.10.2020 15:51:56</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Page is navigated to Search Page] started</span>
 												
 												<div class="st info">
-													<span class="tt">02.17.2020 08:48:17</span>&nbsp;
+													<span class="tt">03.10.2020 15:51:56</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Page is navigated to Search Page]</span>
 													
 													<span class="td">Page Title is Validated. Expected: Search results actual: Search results</span>
 												</div>
 												<div class="st info">
-													<span class="tt">02.17.2020 08:48:17</span>&nbsp;
+													<span class="tt">03.10.2020 15:51:56</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Page is navigated to Search Page]</span>
 													
 													<span class="td">Search Results are displayed. Search Products Count: 1</span>
 												</div>
 												<div class="st info">
-													<span class="tt">02.17.2020 08:48:17</span>&nbsp;
+													<span class="tt">03.10.2020 15:51:56</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Page is navigated to Search Page]</span>
 													
@@ -282,7 +279,263 @@
 											<div class="st pass test l1" 
 												tags="@search"
 												devices="">
-												<span class="tt">02.17.2020 08:48:17</span>&nbsp;
+												<span class="tt">03.10.2020 15:51:48</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">|---[Search Product computer] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @search</span>
+												</span>
+												
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">03.10.2020 15:51:48</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[StepDefs_SetUp.beforeMethodSetUp(Scenario)] started</span>
+												
+												<div class="st pass">
+													<span class="tt">03.10.2020 15:51:48</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[StepDefs_SetUp.beforeMethodSetUp(Scenario)]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">03.10.2020 15:51:48</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I open a browser] started</span>
+												
+												<div class="st info">
+													<span class="tt">03.10.2020 15:51:50</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I open a browser]</span>
+													
+													<span class="td">Chrome Browser is opened</span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">03.10.2020 15:51:50</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I navigate to env] started</span>
+												
+												<div class="st info">
+													<span class="tt">03.10.2020 15:51:51</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I navigate to env]</span>
+													
+													<span class="td">Browser Navigated to URL: http://demo.cs-cart.com/</span>
+												</div>
+												<div class="st info">
+													<span class="tt">03.10.2020 15:51:51</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I navigate to env]</span>
+													
+													<span class="td">User Navigated to url: http://demo.cs-cart.com/</span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">03.10.2020 15:51:51</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I Search the Product "computer"] started</span>
+												
+												<div class="st info">
+													<span class="tt">03.10.2020 15:51:53</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I Search the Product "computer"]</span>
+													
+													<span class="td">Search box Key enetered as : computer</span>
+												</div>
+												<div class="st info">
+													<span class="tt">03.10.2020 15:51:56</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I Search the Product "computer"]</span>
+													
+													<span class="td">Search Button Clicked</span>
+												</div>
+												<div class="st info">
+													<span class="tt">03.10.2020 15:51:56</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I Search the Product "computer"]</span>
+													
+													<span class="td">Product Searched.</span>
+												</div>
+												<div class="st info">
+													<span class="tt">03.10.2020 15:51:56</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I Search the Product "computer"]</span>
+													
+													<span class="td">Product name entered as computer and search button clicked</span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">03.10.2020 15:51:56</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Page is navigated to Search Page] started</span>
+												
+												<div class="st info">
+													<span class="tt">03.10.2020 15:51:56</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Page is navigated to Search Page]</span>
+													
+													<span class="td">Page Title is Validated. Expected: Search results actual: Search results</span>
+												</div>
+												<div class="st info">
+													<span class="tt">03.10.2020 15:51:56</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Page is navigated to Search Page]</span>
+													
+													<span class="td">Search Results are displayed. Search Products Count: 1</span>
+												</div>
+												<div class="st info">
+													<span class="tt">03.10.2020 15:51:56</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Page is navigated to Search Page]</span>
+													
+													<span class="td">Page SUccessfully navigated to product search page</span>
+												</div>
+											</div>
+											<div class="st pass test l1" 
+												tags="@search"
+												devices="">
+												<span class="tt">03.10.2020 15:51:56</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">|---[Search Product mobile 1] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @search</span>
+												</span>
+												
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">03.10.2020 15:51:56</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[StepDefs_SetUp.beforeMethodSetUp(Scenario)] started</span>
+												
+												<div class="st pass">
+													<span class="tt">03.10.2020 15:51:56</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[StepDefs_SetUp.beforeMethodSetUp(Scenario)]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">03.10.2020 15:51:56</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I open a browser] started</span>
+												
+												<div class="st info">
+													<span class="tt">03.10.2020 15:51:57</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I open a browser]</span>
+													
+													<span class="td">Chrome Browser is opened</span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">03.10.2020 15:51:57</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I navigate to env] started</span>
+												
+												<div class="st info">
+													<span class="tt">03.10.2020 15:51:58</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I navigate to env]</span>
+													
+													<span class="td">Browser Navigated to URL: http://demo.cs-cart.com/</span>
+												</div>
+												<div class="st info">
+													<span class="tt">03.10.2020 15:51:58</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I navigate to env]</span>
+													
+													<span class="td">User Navigated to url: http://demo.cs-cart.com/</span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">03.10.2020 15:51:58</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I Search the Product "mobile"] started</span>
+												
+												<div class="st info">
+													<span class="tt">03.10.2020 15:52:00</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I Search the Product "mobile"]</span>
+													
+													<span class="td">Search box Key enetered as : mobile</span>
+												</div>
+												<div class="st info">
+													<span class="tt">03.10.2020 15:52:03</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I Search the Product "mobile"]</span>
+													
+													<span class="td">Search Button Clicked</span>
+												</div>
+												<div class="st info">
+													<span class="tt">03.10.2020 15:52:03</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I Search the Product "mobile"]</span>
+													
+													<span class="td">Product Searched.</span>
+												</div>
+												<div class="st info">
+													<span class="tt">03.10.2020 15:52:03</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I Search the Product "mobile"]</span>
+													
+													<span class="td">Product name entered as mobile and search button clicked</span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">03.10.2020 15:52:03</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Page is navigated to Search Page] started</span>
+												
+												<div class="st info">
+													<span class="tt">03.10.2020 15:52:03</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Page is navigated to Search Page]</span>
+													
+													<span class="td">Page Title is Validated. Expected: Search results actual: Search results</span>
+												</div>
+												<div class="st info">
+													<span class="tt">03.10.2020 15:52:03</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Page is navigated to Search Page]</span>
+													
+													<span class="td">Search Results are displayed. Search Products Count: 1</span>
+												</div>
+												<div class="st info">
+													<span class="tt">03.10.2020 15:52:03</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Page is navigated to Search Page]</span>
+													
+													<span class="td">Page SUccessfully navigated to product search page</span>
+												</div>
+											</div>
+											<div class="st pass test l1" 
+												tags="@search"
+												devices="">
+												<span class="tt">03.10.2020 15:51:56</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">|---[Search Product mobile] started</span>
 												<span class="category-list">
@@ -293,12 +546,12 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">02.17.2020 08:48:17</span>&nbsp;
+												<span class="tt">03.10.2020 15:51:56</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[StepDefs_SetUp.beforeMethodSetUp(Scenario)] started</span>
 												
 												<div class="st pass">
-													<span class="tt">02.17.2020 08:48:17</span>&nbsp;
+													<span class="tt">03.10.2020 15:51:56</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[StepDefs_SetUp.beforeMethodSetUp(Scenario)]</span>
 													
@@ -308,12 +561,12 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">02.17.2020 08:48:17</span>&nbsp;
+												<span class="tt">03.10.2020 15:51:56</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I open a browser] started</span>
 												
 												<div class="st info">
-													<span class="tt">02.17.2020 08:48:18</span>&nbsp;
+													<span class="tt">03.10.2020 15:51:58</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I open a browser]</span>
 													
@@ -323,19 +576,19 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">02.17.2020 08:48:18</span>&nbsp;
+												<span class="tt">03.10.2020 15:51:58</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I navigate to env] started</span>
 												
 												<div class="st info">
-													<span class="tt">02.17.2020 08:48:18</span>&nbsp;
+													<span class="tt">03.10.2020 15:51:58</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I navigate to env]</span>
 													
 													<span class="td">Browser Navigated to URL: http://demo.cs-cart.com/</span>
 												</div>
 												<div class="st info">
-													<span class="tt">02.17.2020 08:48:18</span>&nbsp;
+													<span class="tt">03.10.2020 15:51:58</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I navigate to env]</span>
 													
@@ -345,33 +598,33 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">02.17.2020 08:48:18</span>&nbsp;
+												<span class="tt">03.10.2020 15:51:58</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I Search the Product "mobile"] started</span>
 												
 												<div class="st info">
-													<span class="tt">02.17.2020 08:48:21</span>&nbsp;
+													<span class="tt">03.10.2020 15:52:01</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I Search the Product "mobile"]</span>
 													
 													<span class="td">Search box Key enetered as : mobile</span>
 												</div>
 												<div class="st info">
-													<span class="tt">02.17.2020 08:48:23</span>&nbsp;
+													<span class="tt">03.10.2020 15:52:03</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I Search the Product "mobile"]</span>
 													
 													<span class="td">Search Button Clicked</span>
 												</div>
 												<div class="st info">
-													<span class="tt">02.17.2020 08:48:23</span>&nbsp;
+													<span class="tt">03.10.2020 15:52:03</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I Search the Product "mobile"]</span>
 													
 													<span class="td">Product Searched.</span>
 												</div>
 												<div class="st info">
-													<span class="tt">02.17.2020 08:48:23</span>&nbsp;
+													<span class="tt">03.10.2020 15:52:03</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I Search the Product "mobile"]</span>
 													
@@ -381,38 +634,38 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">02.17.2020 08:48:23</span>&nbsp;
+												<span class="tt">03.10.2020 15:52:03</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Page is navigated to Search Page] started</span>
 												
 												<div class="st info">
-													<span class="tt">02.17.2020 08:48:23</span>&nbsp;
+													<span class="tt">03.10.2020 15:52:03</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Page is navigated to Search Page]</span>
 													
 													<span class="td">Page Title is Validated. Expected: Search results actual: Search results</span>
 												</div>
 												<div class="st info">
-													<span class="tt">02.17.2020 08:48:23</span>&nbsp;
+													<span class="tt">03.10.2020 15:52:03</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Page is navigated to Search Page]</span>
 													
 													<span class="td">Search Results are displayed. Search Products Count: 1</span>
 												</div>
 												<div class="st info">
-													<span class="tt">02.17.2020 08:48:23</span>&nbsp;
+													<span class="tt">03.10.2020 15:52:03</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Page is navigated to Search Page]</span>
 													
 													<span class="td">Page SUccessfully navigated to product search page</span>
 												</div>
 											</div>
-											<div class="st pass test l1" 
+											<div class="st fail test l1" 
 												tags="@search"
 												devices="">
-												<span class="tt">02.17.2020 08:48:23</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">|---[Search Product computer and scroll] started</span>
+												<span class="tt">03.10.2020 15:52:03</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">|---[Search Product computer and scroll 1] started</span>
 												<span class="category-list">
 													<span class="category badge"><i class="fa fa-tag"></i> @search</span>
 												</span>
@@ -421,12 +674,12 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">02.17.2020 08:48:23</span>&nbsp;
+												<span class="tt">03.10.2020 15:52:03</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[StepDefs_SetUp.beforeMethodSetUp(Scenario)] started</span>
 												
 												<div class="st pass">
-													<span class="tt">02.17.2020 08:48:23</span>&nbsp;
+													<span class="tt">03.10.2020 15:52:03</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[StepDefs_SetUp.beforeMethodSetUp(Scenario)]</span>
 													
@@ -436,12 +689,12 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">02.17.2020 08:48:23</span>&nbsp;
+												<span class="tt">03.10.2020 15:52:03</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I open a browser] started</span>
 												
 												<div class="st info">
-													<span class="tt">02.17.2020 08:48:24</span>&nbsp;
+													<span class="tt">03.10.2020 15:52:04</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I open a browser]</span>
 													
@@ -451,103 +704,208 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">02.17.2020 08:48:24</span>&nbsp;
+												<span class="tt">03.10.2020 15:52:04</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I navigate to env] started</span>
 												
 												<div class="st info">
-													<span class="tt">02.17.2020 08:48:25</span>&nbsp;
+													<span class="tt">03.10.2020 15:52:05</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I navigate to env]</span>
 													
 													<span class="td">Browser Navigated to URL: http://demo.cs-cart.com/</span>
 												</div>
 												<div class="st info">
-													<span class="tt">02.17.2020 08:48:25</span>&nbsp;
+													<span class="tt">03.10.2020 15:52:05</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I navigate to env]</span>
 													
 													<span class="td">User Navigated to url: http://demo.cs-cart.com/</span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st fail test l2" 
 												tags=""
 												devices="">
-												<span class="tt">02.17.2020 08:48:25</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">03.10.2020 15:52:05</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I Search the Product "computer"] started</span>
 												
-												<div class="st info">
-													<span class="tt">02.17.2020 08:48:26</span>&nbsp;
-													<span class="ts">info</span>&nbsp;&nbsp; 
+												<div class="st fail">
+													<span class="tt">03.10.2020 15:52:06</span>&nbsp;
+													<span class="ts">fail</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I Search the Product "computer"]</span>
 													
-													<span class="td">Search box Key enetered as : computer</span>
-												</div>
-												<div class="st info">
-													<span class="tt">02.17.2020 08:48:29</span>&nbsp;
-													<span class="ts">info</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I Search the Product "computer"]</span>
-													
-													<span class="td">Search Button Clicked</span>
-												</div>
-												<div class="st info">
-													<span class="tt">02.17.2020 08:48:29</span>&nbsp;
-													<span class="ts">info</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I Search the Product "computer"]</span>
-													
-													<span class="td">Product Searched.</span>
-												</div>
-												<div class="st info">
-													<span class="tt">02.17.2020 08:48:29</span>&nbsp;
-													<span class="ts">info</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I Search the Product "computer"]</span>
-													
-													<span class="td">Product name entered as computer and search button clicked</span>
+													<span class="td">threw an exception<br><textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Cannot locate an element using name=hint_q
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Akashs-MacBook-Pro.local', ip: 'fe80:0:0:0:b2:6799:85b5:267e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '12.0.2'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
+	at po.PO_Cmn.SetSearchTextBox(PO_Cmn.java:43)
+	at po.PO_Cmn.SearchProduct(PO_Cmn.java:56)
+	at stepdefs.StepDefs_Search.search_product(StepDefs_Search.java:23)
+	at ✽.I Search the Product "computer"(features/HealthCheck2.feature:18)
+</textarea></span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">02.17.2020 08:48:29</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">03.10.2020 15:52:06</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Page is navigated to Search Page] started</span>
 												
-												<div class="st info">
-													<span class="tt">02.17.2020 08:48:29</span>&nbsp;
-													<span class="ts">info</span>&nbsp;&nbsp; 
+												<div class="st skip">
+													<span class="tt">03.10.2020 15:52:06</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Page is navigated to Search Page]</span>
 													
-													<span class="td">Page Title is Validated. Expected: Search results actual: Search results</span>
+													<span class="td">Step skipped</span>
 												</div>
-												<div class="st info">
-													<span class="tt">02.17.2020 08:48:29</span>&nbsp;
-													<span class="ts">info</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Page is navigated to Search Page]</span>
+											</div>
+											<div class="st skip test l2" 
+												tags=""
+												devices="">
+												<span class="tt">03.10.2020 15:52:06</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And scroll the page] started</span>
+												
+												<div class="st skip">
+													<span class="tt">03.10.2020 15:52:06</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And scroll the page]</span>
 													
-													<span class="td">Search Results are displayed. Search Products Count: 1</span>
+													<span class="td">Step skipped</span>
 												</div>
-												<div class="st info">
-													<span class="tt">02.17.2020 08:48:29</span>&nbsp;
-													<span class="ts">info</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Page is navigated to Search Page]</span>
+											</div>
+											<div class="st fail test l1" 
+												tags="@search"
+												devices="">
+												<span class="tt">03.10.2020 15:52:03</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">|---[Search Product computer and scroll] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @search</span>
+												</span>
+												
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">03.10.2020 15:52:03</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[StepDefs_SetUp.beforeMethodSetUp(Scenario)] started</span>
+												
+												<div class="st pass">
+													<span class="tt">03.10.2020 15:52:03</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[StepDefs_SetUp.beforeMethodSetUp(Scenario)]</span>
 													
-													<span class="td">Page SUccessfully navigated to product search page</span>
+													<span class="td"></span>
 												</div>
 											</div>
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">02.17.2020 08:48:29</span>&nbsp;
+												<span class="tt">03.10.2020 15:52:03</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And scroll the page] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I open a browser] started</span>
 												
 												<div class="st info">
-													<span class="tt">02.17.2020 08:48:34</span>&nbsp;
+													<span class="tt">03.10.2020 15:52:04</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I open a browser]</span>
+													
+													<span class="td">Chrome Browser is opened</span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">03.10.2020 15:52:04</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I navigate to env] started</span>
+												
+												<div class="st info">
+													<span class="tt">03.10.2020 15:52:05</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I navigate to env]</span>
+													
+													<span class="td">Browser Navigated to URL: http://demo.cs-cart.com/</span>
+												</div>
+												<div class="st info">
+													<span class="tt">03.10.2020 15:52:05</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I navigate to env]</span>
+													
+													<span class="td">User Navigated to url: http://demo.cs-cart.com/</span>
+												</div>
+											</div>
+											<div class="st fail test l2" 
+												tags=""
+												devices="">
+												<span class="tt">03.10.2020 15:52:05</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I Search the Product "computer"] started</span>
+												
+												<div class="st fail">
+													<span class="tt">03.10.2020 15:52:05</span>&nbsp;
+													<span class="ts">fail</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I Search the Product "computer"]</span>
+													
+													<span class="td">threw an exception<br><textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Cannot locate an element using name=hint_q
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Akashs-MacBook-Pro.local', ip: 'fe80:0:0:0:b2:6799:85b5:267e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '12.0.2'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
+	at po.PO_Cmn.SetSearchTextBox(PO_Cmn.java:43)
+	at po.PO_Cmn.SearchProduct(PO_Cmn.java:56)
+	at stepdefs.StepDefs_Search.search_product(StepDefs_Search.java:23)
+	at ✽.I Search the Product "computer"(features/HealthCheck.feature:18)
+</textarea></span>
+												</div>
+											</div>
+											<div class="st skip test l2" 
+												tags=""
+												devices="">
+												<span class="tt">03.10.2020 15:52:05</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Page is navigated to Search Page] started</span>
+												
+												<div class="st skip">
+													<span class="tt">03.10.2020 15:52:05</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Page is navigated to Search Page]</span>
+													
+													<span class="td">Step skipped</span>
+												</div>
+											</div>
+											<div class="st skip test l2" 
+												tags=""
+												devices="">
+												<span class="tt">03.10.2020 15:52:05</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And scroll the page] started</span>
+												
+												<div class="st skip">
+													<span class="tt">03.10.2020 15:52:05</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And scroll the page]</span>
 													
-													<span class="td">js scroll is successfully</span>
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
 											</div>

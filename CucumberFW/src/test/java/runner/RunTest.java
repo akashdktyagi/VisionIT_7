@@ -15,7 +15,7 @@ import cucumber.api.junit.Cucumber;
 				"json:target/json/file.json",
 		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
 				
-		dryRun=true
+		dryRun=false
 
 		)
 public class RunTest {

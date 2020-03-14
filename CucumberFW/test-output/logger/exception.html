@@ -107,12 +107,12 @@
 				<div class="p-2 px-3 text-muted text-sm">Tags</div>
 					<div class="list-item attr">
 						<div class="list-body">
-							<a href="#" class="item-title _500">java.lang.NullPointerException</a>
+							<a href="#" class="item-title _500">org.openqa.selenium.NoSuchElementException</a>
 							<div class="item-except text-sm text-muted h-1x">
-								1 tests
+								2 tests
 							</div>
 							<div class="tc d-none">
-								<h5 class="mb-4">java.lang.NullPointerException</h5>
+								<h5 class="mb-4">org.openqa.selenium.NoSuchElementException</h5>
 								<table class="table">
 									<thead><tr>
 										<th id="status-col"></th>
@@ -124,10 +124,10 @@
 									</tr></thead>
 									<tbody>
 	
-<tr class="s-fail" test-id="4" parent-id="1">
+<tr class="s-fail" test-id="35" parent-id="1">
 	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
-	<td class="_600">When I Search the Product "computer" <br/><span class="text-muted text-sm">Search Product computer</span></td>
-	<td>0h 0m 0s+2msc</td>
+	<td class="_600">When I Search the Product "computer" <br/><span class="text-muted text-sm">Search Product computer and scroll</span></td>
+	<td>0h 0m 0s+753msc</td>
 	<td></td>
 	<td>
 	</td>
@@ -136,40 +136,30 @@
 <tr class="details">
 	<td colspan="5">
 		
-		<textarea disabled class="code-block">java.lang.NullPointerException
+		<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Cannot locate an element using name=hint_q
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Akashs-MacBook-Pro.local', ip: 'fe80:0:0:0:b2:6799:85b5:267e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '12.0.2'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
+	at po.PO_Cmn.SetSearchTextBox(PO_Cmn.java:43)
+	at po.PO_Cmn.SearchProduct(PO_Cmn.java:56)
 	at stepdefs.StepDefs_Search.search_product(StepDefs_Search.java:23)
-	at ✽.I Search the Product "computer"(features/End2EndJourney.feature:7)
+	at ✽.I Search the Product "computer"(features/HealthCheck.feature:18)
 </textarea>
 	</td>
 </tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-					</div>
-					<div class="list-item attr">
-						<div class="list-body">
-							<a href="#" class="item-title _500">org.openqa.selenium.NoSuchWindowException</a>
-							<div class="item-except text-sm text-muted h-1x">
-								1 tests
-							</div>
-							<div class="tc d-none">
-								<h5 class="mb-4">org.openqa.selenium.NoSuchWindowException</h5>
-								<table class="table">
-									<thead><tr>
-										<th id="status-col"></th>
-										<th>Test</th>
-										<th>Duration</th>
-										<th>Attributes</th>
-										<th>Media</th>
-										<th>Source</th>
-									</tr></thead>
-									<tbody>
 	
-<tr class="s-fail" test-id="26" parent-id="1">
+<tr class="s-fail" test-id="34" parent-id="1">
 	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
-	<td class="_600">Then Page is navigated to Search Page <br/><span class="text-muted text-sm">Search Product computer and scroll</span></td>
-	<td>0h 0m 0s+48msc</td>
+	<td class="_600">When I Search the Product "computer" <br/><span class="text-muted text-sm">Search Product computer and scroll 1</span></td>
+	<td>0h 0m 1s+599msc</td>
 	<td></td>
 	<td>
 	</td>
@@ -178,29 +168,22 @@
 <tr class="details">
 	<td colspan="5">
 		
-		<textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
-  (Session info: chrome=79.0.3945.130)
+		<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Cannot locate an element using name=hint_q
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Akashs-MacBook-Pro.local', ip: 'fe80:0:0:0:1c7f:dadf:3b44:f893%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: /var/folders/bh/5625cyj57lb...}, goog:chromeOptions: {debuggerAddress: localhost:53639}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 59dc246d5cddd4155db01e8155f140b4
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
-	at po.PO_Cmn.ValidateSearchIsWorking(PO_Cmn.java:67)
-	at stepdefs.StepDefs_Search.page_is_navigated_to_Search_Page(StepDefs_Search.java:30)
-	at ✽.Page is navigated to Search Page(features/HealthCheck.feature:20)
+System info: host: 'Akashs-MacBook-Pro.local', ip: 'fe80:0:0:0:b2:6799:85b5:267e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '12.0.2'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
+	at po.PO_Cmn.SetSearchTextBox(PO_Cmn.java:43)
+	at po.PO_Cmn.SearchProduct(PO_Cmn.java:56)
+	at stepdefs.StepDefs_Search.search_product(StepDefs_Search.java:23)
+	at ✽.I Search the Product "computer"(features/HealthCheck2.feature:18)
 </textarea>
 	</td>
 </tr>
@@ -228,7 +211,7 @@ Session ID: 59dc246d5cddd4155db01e8155f140b4
 						            </div>
 									<ul class="nav nav-xs flex-row no-border pull-right">
 <li><a href="#" class="b-l"><span class="badge badge-pull">ExtentReports</span></a></li>
-<li><a href="#" class="b-l"><span class="badge badge-pull">Feb 16, 2020 01:51:11 PM</span></a></li>
+<li><a href="#" class="b-l"><span class="badge badge-pull">Mar 10, 2020 03:51:47 PM</span></a></li>
 <li><a href="#" class="b-l"><span class="badge badge-pull">4.0</span></a></li>
 								    </ul>
 								</div>
